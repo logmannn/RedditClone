@@ -1,3 +1,11 @@
-<ul>
-  <li *ngFor="let post of postPreviews">{{post.upvote}} <a href="{{post.titleLink}}" class="title">{{post.title}}</a></li>
-</ul>
+<div class="row">
+  <div class="col-sm-9">
+    <ul>
+      <li *ngFor="let post of postPreviews">{{post.upvote}} <a href="{{post.titleLink}}" class="title">{{post.title}}</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-3">
+    <button type="button" (click)="submitAPost()" name="button">Submit a post</button>
+    <button type="button" (click)="submitASubreddit()" name="button">Create your own subreddit</button>
+  </div>
+</div>
