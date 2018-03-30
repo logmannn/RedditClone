@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { SubredditComponent } from './subreddit/subreddit.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubredditComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
