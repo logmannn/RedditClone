@@ -1,15 +1,19 @@
 <div class="row">
   <div class="col-sm-9">
-    <ul>
-      <li *ngFor="let post of postPreviews">{{post.upvote}} <a href="{{post.titleLink}}" class="title">{{post.title}}</a></li>
-    </ul>
+    <div *ngIf="showSubmitDiv == false">
+      <ul>
+        <li *ngFor="let post of postPreviews">{{post.upvote}} <a href="{{post.titleLink}}" class="title">{{post.title}}</a></li>
+      </ul>
+    </div>
+
   </div>
   <div class="col-sm-3">
     <button type="button" class="submitPost" (click)="showSubmitAPost()" name="button">Submit a post</button>
     <!-- <button type="button" (click)="submitASubreddit()" name="button">Create your own subreddit</button> -->
   </div>
 </div>
-<div class="container submitAPost">
+
+<div #submitAPost class="container submitAPost" *ngIf="showSubmitDiv == true">
   <h3>submit to reddit</h3>
   <h3>url</h3>
   <input type="text" name="" value="">

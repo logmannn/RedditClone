@@ -11,10 +11,14 @@ import { PostPreview } from './models/content.model';
 @Injectable()
 export class ContentComponent implements OnInit {
 
+  showSubmitDiv = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  //set to true in production
 
   postPreviews: PostPreview[] = [
     new PostPreview('Marijuana Dispensaries Are Keeping Cannabis Out Of The Hands Of Minors In Oregon', 'https://www.forbes.com/sites/monazhang/2018/03/30/marijuana-dispensaries-are-keeping-cannabis-out-of-the-hands-of-minors-in-oregon/'),
@@ -22,7 +26,7 @@ export class ContentComponent implements OnInit {
   ];
 
   showSubmitAPost() {
-    
+    this.showSubmitDiv = true;
   }
 
   submitAPost() {
