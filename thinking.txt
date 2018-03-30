@@ -12,3 +12,8 @@ a subreddit has its own name, link, posts, styling, and custom sidebar text
 
 -a post and comments have upvotes
 -a subreddit has followers
+
+* as a user I should be able to upvote or downvote a post
+* as a user I should be able to add comments to a post
+* as a user I should be able to create posts
+* as a user I should be able to add comments to a post
