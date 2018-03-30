@@ -25,7 +25,12 @@ export class ContentComponent implements OnInit {
     new PostPreview('Coast Guard', 'https://scontent-lga3-1.cdninstagram.com/vp/a32425a4a9b99972516ddbcf2b01cf4a/5B53D0CF/t51.2885-15/e35/28751440_1621525544582505_9041431883551866880_n.jpg'),
   ];
 
-  showSubmitAPost() {
+  submitAPosts() {
+    this.postPreviews.push({upvote: 0, title: 'Marijuana Dispensaries Are Keeping Cannabis Out Of The Hands Of Minors In Oregon', titleLink: 'https://www.forbes.com/sites/monazhang/2018/03/30/marijuana-dispensaries-are-keeping-cannabis-out-of-the-hands-of-minors-in-oregon/'});
+    console.log(PostPreview);
+  }
+
+  showSubmitAPosts() {
     if (this.showSubmitDiv == false) {
       this.showSubmitDiv = true;
     } else {
@@ -33,10 +38,6 @@ export class ContentComponent implements OnInit {
     }
   }
 
-  submitAPost() {
-    //get this information from a popup form
-    this.postPreviews.push({upvote: 0, title: 'Marijuana Dispensaries Are Keeping Cannabis Out Of The Hands Of Minors In Oregon', titleLink: 'https://www.forbes.com/sites/monazhang/2018/03/30/marijuana-dispensaries-are-keeping-cannabis-out-of-the-hands-of-minors-in-oregon/'});
-    console.log(PostPreview);
-  }
+
 
 }

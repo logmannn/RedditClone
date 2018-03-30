@@ -10,7 +10,7 @@
   padding: 3px;
   font-weight: bold;
   text-align: center;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .finalizePost {
@@ -49,3 +49,7 @@
 .col-sm-3 {
   border: 1px solid grey;
 }
+
+/* .sidebar {
+  max-width: 300px;
+} */
