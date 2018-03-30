@@ -14,7 +14,9 @@
 </div>
 
 <div #submitAPost class="container submitAPost" *ngIf="showSubmitDiv == true">
+  <div (click)="showSubmitAPost()" class="alignRight closeThis">X</div>
   <h3>submit to reddit</h3>
+
   <h3>url</h3>
   <input type="text" name="" value="">
 
@@ -25,7 +27,7 @@
   <input type="text" name="" value="">
 
   <h3>text</h3>
-  <input type="text" name="" value="">
+  <textarea name="name" rows="8" cols="80"></textarea>
 
   <!-- <h3>Choose where to post</h3>
   <input type="text" name="" value=""> -->

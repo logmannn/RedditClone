@@ -26,7 +26,11 @@ export class ContentComponent implements OnInit {
   ];
 
   showSubmitAPost() {
-    this.showSubmitDiv = true;
+    if (this.showSubmitDiv == false) {
+      this.showSubmitDiv = true;
+    } else {
+      this.showSubmitDiv = false;
+    }
   }
 
   submitAPost() {
