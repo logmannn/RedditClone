@@ -7,9 +7,10 @@
 .submitPost {
   display: block;
   margin-bottom: 20px;
-  width: 250px;
   padding: 3px;
   font-weight: bold;
+  text-align: center;
+  margin: 0 auto;  
 }
 
 .finalizePost {
@@ -24,7 +25,6 @@
   max-width: 650px;
   height: 300px;
   display: table;
-  margin: 0 auto;
   margin-top: 0em;
   top: 50%;
   position: relative;
@@ -42,6 +42,10 @@
   cursor: pointer
 }
 
-.col-sm-3, .col-sm-9 {
-  padding-right: 0;
+.row {
+  width: 100%;
+}
+
+.col-sm-3 {
+  border: 1px solid grey;
 }
