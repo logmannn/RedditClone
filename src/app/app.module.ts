@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SubredditComponent } from './subreddit/subreddit.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SubredditComponent
   ],
   imports: [
     BrowserModule
