@@ -13,24 +13,25 @@
     </div>
   </div>
 </div>
+<form class="newPost" action="index.html" method="post">
+  <div #submitAPost class="container submitAPost" *ngIf="showSubmitDiv == true">
+    <div (click)="showSubmitAPosts()" class="alignRight closeThis">X</div>
+    <h3>submit to reddit</h3>
 
-<div #submitAPost class="container submitAPost" *ngIf="showSubmitDiv == true">
-  <div (click)="showSubmitAPosts()" class="alignRight closeThis">X</div>
-  <h3>submit to reddit</h3>
+    <h3>url</h3>
+    <input #url type="text" name="" value="" class="form-control">
 
-  <h3>url</h3>
-  <input type="text" name="" value="">
+    <!-- <h3>Image/Video</h3>
+    <input type="text" name="" value=""> -->
 
-  <!-- <h3>Image/Video</h3>
-  <input type="text" name="" value=""> -->
+    <h3><span class="red">*</span>title</h3>
+    <input #title type="text" name="" value="">
 
-  <h3><span class="red">*</span>title</h3>
-  <input type="text" name="" value="">
+    <!-- <h3>text</h3>
+    <textarea #text name="name" rows="8" cols="80"></textarea> -->
 
-  <h3>text</h3>
-  <textarea name="name" rows="8" cols="80"></textarea>
-
-  <!-- <h3>Choose where to post</h3>
-  <input type="text" name="" value=""> -->
-  <button (click)="submitAPosts()" class="finalizePost" type="button" name="button">Submit</button>
-</div>
+    <!-- <h3>Choose where to post</h3>
+    <input type="text" name="" value=""> -->
+    <button (click)="submitAPosts(0,title.value,url.value)" class="finalizePost" type="button" name="button">Submit</button>
+  </div>
+</form>
