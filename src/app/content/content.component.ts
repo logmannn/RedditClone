@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
   ];
 
   submitAPost() {
-    //get this information from a popup form
+    //get this information from a popup form-
     this.postPreviews.push({upvote: 0, title: 'Marijuana Dispensaries Are Keeping Cannabis Out Of The Hands Of Minors In Oregon', titleLink: 'https://www.forbes.com/sites/monazhang/2018/03/30/marijuana-dispensaries-are-keeping-cannabis-out-of-the-hands-of-minors-in-oregon/'});
     console.log(PostPreview);
   }
