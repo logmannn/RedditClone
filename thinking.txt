@@ -1,5 +1,6 @@
 *a reddit page [subreddit] > is composed of [posts] > which is composed of [comments]
-a subreddit also has a sidebar, header  and footer component
+
+a subreddit also has a sidebar, header and footer component
 
 *the reddit homepage > is comprised of [posts] from the top subreddits
 
@@ -7,3 +8,7 @@ a subreddit also has a sidebar, header  and footer component
 -the first step is to create a subreddit class of some sort that can be used to create multiple subreddits
 a subreddit has its own name, link, posts, styling, and custom sidebar text
   -The content can also be sorted by using something similar to a pipe-?
+
+
+-a post and comments have upvotes
+-a subreddit has followers
